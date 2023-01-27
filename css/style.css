@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171717;
+}
+
+.fira {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.header-container {
+  position: relative;
+  
+}
+
+.yellow {
+  color:#F7D532;
+}
+
+
+.header-img {
+  width: 100%;
+  padding: 5rem;
+}
+.header {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.header-content {
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-bottom: 2rem;
+  margin-top: -3rem;
+}
+
+.search-header {
+ font-size: 2rem;
+ color: #fff;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #303030;
+  border-radius: 0.5rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.game-cards{
+  padding:0 5rem 5rem 5rem;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+}
+
+
+.game-card-item{
+  background-color: #303030;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 2rem;
+  
+}
+
+
+.game-img> img{
+  width: 100%;
+}
+
+.game-heading{
+  display: flex;
+  margin-top: 1rem;
+}
+.game-heading-img {
+  margin-right: 0.5rem;
+}
+
+.heading-small{
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.game-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.game-button{
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  background-color: #FFCE73;
+  color: black;
+  font-weight: 500;
+  margin-right: 0.5rem;
+
+}
+
+.game-icon{
+  display: flex;
+  align-items: center;
+ 
+}
+
+.game-icon>span {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-family:  'Nunito', sans-serif;
+}
+
+@media only screen and (max-width:990px){
+  .game-cards{
+    padding-right: 5rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width:750px){
+  .game-cards{
+    padding-right: 5rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 1.5rem;
+  }
+
+  .header {
+    position: absolute;
+  top: 30%;
+  left: 15%;
+  color: #fff;
+ 
+  font-weight: 500;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .header-content{
+    font-size: 0.5rem;
+    margin-left: 1rem;
+  }
+}
